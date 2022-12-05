@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Weather Tab | Search</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bg">
+        <header>
+            <div class="container">
+                <div class="head">
+                    <div class="logo">
+                        <a href="https://www.yahoo.com/news/weather/" target="_blank">
+                            <img src="images/logo.png" title="Global Weather Tab" alt="Global Weather Tab" /></div>
+                    </a>
+                    <div id="widget">
+                        <button click="getLocation()">Click to show location</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="search">
+            <form class="searchBox" action="https://the-global-weather.com">
+
+                <input type="text" name="q" placeholder="What would you like to search?">
+                <button type="submit">
+                    <img src="images/magnifier.png" alt="magnifier">
+                </button>
+            </form>
+        </section>
+
+        <section class="links">
+            <div class="widget">
+                <a href="https://www.gmail.com" target="_blank"><img title="Gmail" class="icon" src="images/gmail.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img title="Facebook" class="icon" src="images/facebook.png"></a>
+                <a href="https://www.youtube.com" target="_blank"><img title="Youtube" class="icon" src="images/youtube.png"></a>
+                <a href="https://www.amazon.com/" target="_blank"><img title="Amazon" class="icon" src="images/amazon.png"></a>
+                <a href="https://www.yahoo.com/news/weather/" target="_blank"><img title="Weather" class="icon" src="images/weather.png"></a>
+            </div>
+        </section>
+
+        <div class="bottom-widget">
+            <div class="container">
+                <div id="clock"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="pull left">
+                <a href="aboutUs/about.html" target="_blank">About Us</a>
+                <a href="terms/terms.html" target="_blank">Terms of Service</a>
+                <a href="privacy/privacy.html" target="_blank">Privacy Policy</a>
+            </div>
+        </footer>
+        <script src="scripts/newtab.js"></script>
+        <script src="scripts/weather.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+/* this css is for newTab.html */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    -webkit-animation: fade 1.5s;
+    animation: fade 1.5s;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0 10px;
+    background-size: cover;
+}
+
+.logo {
+    float: left;
+    text-align: left;
+}
+
+.logo img {
+    max-height: 120px;
+}
+
+.search {
+    margin: 180px auto 0;
+    width: 85%;
+    max-width: 800px;
+}
+
+form {
+    border: 1px solid #b5b5b5;
+    height: 48px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.searchBox {
+    width: auto;
+}
+
+.searchBox>input {
+    text-align: center;
+    width: 83%;
+    border: none;
+    padding: 1% 2.6%;
+    height: 72%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px
+}
+
+.searchBox>button {
+    display: inline-block;
+    width: 12%;
+    border: none;
+    height: 99%;
+    margin: 0px 0px 0px -6px;
+    padding: 0;
+    background: white;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.widget {
+    transition: 1s;
+    background: #ffffff40;
+    width: 300px;
+    margin: auto;
+    border-radius: 35px;
+}
+
+.widget:hover {
+    background: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .search {
+        margin: 85px auto 22px;
+        width: 94%;
+        max-width: 860px;
+    }
+    #widget {
+        position: absolute;
+        left: 0;
+        margin: 0 !important;
+    }
+}
+
+#widget {
+    float: right;
+    height: 100%;
+    width: 170px;
+}
+
+#weather .small {
+    font-size: 16px;
+}
+
+#weather .widget-top {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+}
+
+#weather .widget-bottom {
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#weather .widget-content {
+    height: 100%;
+    float: left;
+}
+
+#weather .widget-content-left {
+    text-align: center;
+    display: grid;
+    place-content: center;
+    width: 30%;
+}
+
+#weather .widget-content-right {
+    width: 67%;
+}
+
+#weather .temp {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+}
+
+footer .container {
+    padding: 15px;
+}
+
+footer a,
+footer a:visited {
+    text-shadow: 0px 0px 3px #444444;
+    color: white !important;
+}
+
+footer .container {
+    transition: 1s
+}
+
+footer .container:hover {
+    background: #0000004b;
+}
+
+#clock {
+    margin-right: 30px;
+}
+
+#clock .time {
+    font-size: 32px;
+    text-align: right;
+}
+
+#clock .date {
+    font-size: 14px;
+}
+
+#clock .time .small {
+    font-size: 12px;
+}
+
+#clock,
+#widget {
+    text-shadow: 0px 0px 3px #444444;
+    color: rgb(252, 238, 238);
+}
+
+.bottom-widget {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font-size: 16px;
+}
+
+.bottom-widget .container {
+    padding: 15px;
+}
